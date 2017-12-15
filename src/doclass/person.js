@@ -9,7 +9,7 @@ class Person {
 	}
 
 	sayHello() {
-		console.log('hello say by aran')
+		console.log('hello say by aran123123')
 	}
 }
 

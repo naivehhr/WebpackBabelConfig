@@ -11,7 +11,7 @@ module.exports = {
 	output: {
 		path: __dirname + '/build',
 		filename: '[name].js',
-		publicPath: '/assets/', // 这啥东西
+		publicPath: '/assets/', // 对外资源访问地址吧
 		library: 'person', // 会在window上对策一个animation对象
 		libraryTarget: 'umd', // 支持AMD CMD等
 	},
