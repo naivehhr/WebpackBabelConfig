@@ -4,7 +4,7 @@
 - [ ] webpack-dev-server
 - [ ] 代理
 - [ ] loader(css\scss\less\file\img)
-- [ ] 雪碧图
+- [ ] 雪碧图
 - [ ] 打包
 - [ ] 静态包拆分
 
@@ -13,7 +13,7 @@
 webpack.config.js
 
 ```
-module.exports = {
+module.exports = {
 	entry: {
 		animation: 'mian.js'
 	},
