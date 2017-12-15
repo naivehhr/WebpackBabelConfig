@@ -1,8 +1,8 @@
 ## Babel 转码
 
-###配置
+### 配置
 
-* 创建.babelrc
+#### 创建.babelrc
 
 ```
 {
@@ -14,7 +14,7 @@
 }
 ```
 
-* 安装相关依赖
+#### 安装相关依赖
 
 ```
 npm install --save-dev babel-preset-react
@@ -22,12 +22,12 @@ npm install --save-dev babel-preset-stage-2
 ...
 ```
 
-* webpack-loader
+#### webpack-loader
 
 ```
 npm install --save-dev babel-loader babel-core 
 ```
-* webpack.config.js
+#### webpack.config.js
 
 ```
 rules: [
