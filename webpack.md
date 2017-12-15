@@ -9,8 +9,9 @@
 - [ ] 静态包拆分
 
 
-* 基本配置
-webpack.config.js
+### 配置
+
+#### webpack.config.js
 
 ```
 module.exports = {
@@ -26,7 +27,7 @@ module.exports = {
 }
 ```
 
-* webpack-dev-server
+#### webpack-dev-server
 
 ```
 webpack-dev-server -d --config webpack.config.dev.js
