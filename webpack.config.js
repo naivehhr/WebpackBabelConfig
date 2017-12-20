@@ -1,3 +1,5 @@
+const htmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
 	entry: {
 		person: './src/doclass/person.js'
@@ -11,7 +13,6 @@ module.exports = {
 	output: {
 		path: __dirname + '/build',
 		filename: '[name].js',
-		publicPath: '/assets/', // 这啥东西
 		library: 'person', // 会在window上对策一个animation对象
 		libraryTarget: 'umd', // 支持AMD CMD等
 	},
@@ -22,21 +23,19 @@ module.exports = {
 				exclude: /node_modules/,
 				use: {
 					loader: 'babel-loader',
-					// 这里和在.babelrc中定义效果是一样的
-					// options: {
-					// 	presets: [
-					// 		"env",
-					// 		"stage-2"
-					// 	]
-					// }
 				}
 			}
 		]
 	},
-	// devServer: {
-  //   disableHostCheck: true,
-  //   historyApiFallback: true,
-  //   inline: true,
-  //   host: "0.0.0.0",
-  // },
+	plugins: [
+		new htmlWebpackPlugin({
+			template: 'index2.html',
+			title: '我是一个粉刷匠',
+			date: new Date(),
+			minify: {
+				removeComments: true,
+				collapseWhitespace: true
+			}
+		})
+	],
 }

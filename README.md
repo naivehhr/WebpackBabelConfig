@@ -1,6 +1,8 @@
 # WebpackBabelConfig
 
 
-[Babel](./babel.md)
+[Babel](./md/babel.md)
 
-[Webpack](./webpack.md)
+[Webpack](./md/webpack.md)
+
+[Plugin](./md/plugin.md)

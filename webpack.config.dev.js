@@ -1,3 +1,4 @@
+const htmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
 	entry: {
 		person: './src/doclass/person.js'
@@ -33,10 +34,10 @@ module.exports = {
 			}
 		]
 	},
-	// devServer: {
-  //   disableHostCheck: true,
-  //   historyApiFallback: true,
-  //   inline: true,
-  //   host: "0.0.0.0",
-  // },
+	devServer: {
+    disableHostCheck: true,
+    historyApiFallback: true,
+    inline: true,
+    host: "0.0.0.0",
+  }
 }
