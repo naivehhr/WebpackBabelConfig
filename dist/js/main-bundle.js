@@ -77,7 +77,7 @@ var TestApp = function TestApp() {
 	dom.innerHTML = "<div class='msg'></div>";
 };
 
-new TestApp();
+TestApp();
 
 /***/ }),
 /* 1 */

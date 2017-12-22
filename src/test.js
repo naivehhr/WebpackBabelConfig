@@ -5,4 +5,4 @@ const TestApp = function () {
 	dom.innerHTML = "<div class='msg'></div>"
 }
 
-new TestApp()
+TestApp()
