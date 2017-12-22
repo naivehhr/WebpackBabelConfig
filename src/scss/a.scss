@@ -1,0 +1,9 @@
+@import '../assets/_sprites.scss'; 
+
+.facebook{ 
+    @include sprite($logo); 
+}
+
+.msg {
+    @include sprite($msg)
+}

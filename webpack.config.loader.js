@@ -84,18 +84,6 @@ module.exports = {
 				}, {
 					loader: 'image-webpack-loader'
 				}]
-			}, {
-				test: /\.scss$/,
-				use: [{
-					loader: "style-loader"
-				}, {
-					loader: "css-loader"
-				}, {
-					loader: "sass-loader",
-					options: {
-						includePaths: ["absolute/path/a", "absolute/path/b"]
-					}
-				}]
 			}
 		]
 	},
@@ -104,22 +92,6 @@ module.exports = {
 			filename: 'index3.html',
 			template: 'index3.html',
 			inject: 'body'
-		}),
-		new SpritesmithPlugin({
-			// 目标小图标
-			src: {
-				cwd: path.resolve(__dirname, './src/assets'),
-				glob: '*.jpg'
-			},
-			// 输出雪碧图文件及样式文件
-			target: {
-				image: path.resolve(__dirname, './dist/assets/sprite.png'),
-				css: path.resolve(__dirname, './dist/assets/_sprites.scss')
-			},
-			// 样式文件中调用雪碧图地址写法
-			apiOptions: {
-				cssImageRef: '~/sprite.png'
-			}
 		})
 	],
 	resolve: {
